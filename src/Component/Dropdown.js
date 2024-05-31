@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Dropdown = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +16,7 @@ const Dropdown = ({ title, children }) => {
         <h3 className="text-2xl font-semibold">{title}</h3>
         <div
           className={`transform transition-transform duration-200 ${
-            isOpen ? 'rotate-90' : ''
+            isOpen ? "rotate-90" : ""
           }`}
         >
           <svg
