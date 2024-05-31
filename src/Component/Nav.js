@@ -19,7 +19,7 @@ export default function Nav() {
         </div>
         <hr />
       </div>
-      <div className="pt-20"> {/* Added padding-top to avoid content hiding behind the fixed nav */}
+      <div className="pt-20"> 
         <Home />
         <About />
         <Learn />

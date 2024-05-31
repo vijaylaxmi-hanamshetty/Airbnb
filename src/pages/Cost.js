@@ -6,12 +6,12 @@ const Cost = () => {
   return (
     <div className="py-9 lg:px-5">
       <div className=" bg-purple-50">
-        <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 sm:px-10 px-5 lg:py-5">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 sm:px-10 px-5 lg:py-5">
           <div className="lg:py-5 lg:px-5  md:py-5 md:px-5 ">
             <img
               src={img}
               alt=""
-              className="rounded-2xl  lg:w-[40vw] lg:h-[80vh] object-cover w-full"
+              className="rounded-2xl  lg:w-[40vw] lg:h-[80vh] object-cover w-full  md:w-[40vw] md:h-[80vh] "
             />
           </div>
           <div className="py-10 md:py-8 lg:py-36 md:px-7">
