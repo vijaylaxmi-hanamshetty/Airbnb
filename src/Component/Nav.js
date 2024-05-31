@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 import img from "../Images/Ab.png";
 import Home from "../pages/Home";
 import About from "../pages/About";
@@ -8,15 +8,18 @@ import Cost from "../pages/Cost";
 import Question from "../pages/Question";
 import Footer from "../pages/Footer";
 import Set from "../pages/Set";
+
 export default function Nav() {
   return (
-  <div>
-    <div className="flex px-20   py-4 gap-1 static">
-      <img src={img} className=" h-10 w-10 " alt="" />
-      <p className=" text-red-500 text-3xl font-serif ">airbnb</p>
+    <div>
+      <div className="bg-white fixed w-full top-0 z-10">
+        <div className="flex px-20 py-4 gap-1">
+          <img src={img} className="h-10 w-10" alt="Airbnb logo" />
+          <p className="text-red-500 text-3xl font-serif">airbnb</p>
+        </div>
+        <hr />
       </div>
-      <hr className="py-2"/>
-      <div className="py-3">
+      <div className="pt-20"> {/* Added padding-top to avoid content hiding behind the fixed nav */}
         <Home />
         <About />
         <Learn />
@@ -26,7 +29,6 @@ export default function Nav() {
         <Question />
         <Footer />
       </div>
-    
     </div>
   );
 }
